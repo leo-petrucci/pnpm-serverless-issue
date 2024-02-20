@@ -1,0 +1,62 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+service
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+
+# testing
+coverage
+
+# next.js
+.next/
+out/
+build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# turbo
+.turbo
+
+# yarn
+.yarn/cache
+.yarn/install-state.gz
+
+# parcel
+.parcel-cache
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# terraform cache
+.terraform/
+
+# Jetbrains IDE
+.idea
+
+# esbuild
+**/.esbuild
+
+# serverless
+.serverless
+
+.webpack
+.vercel

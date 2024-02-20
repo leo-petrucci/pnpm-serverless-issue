@@ -1,0 +1,31 @@
+service: serverless-issue
+frameworkVersion: "3"
+
+plugins:
+  - serverless-bundle
+  - serverless-domain-manager
+  - serverless-offline
+  - serverless-prune-plugin
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: eu-west-1
+  timeout: 25
+  apiGateway:
+
+functions:
+  invalidate-distribution:
+    handler: src/handlers/example.handler
+    events:
+      - http:
+          method: post
+          path: /example/
+
+custom:
+  bundle:
+    linting: false
+    esbuild: false

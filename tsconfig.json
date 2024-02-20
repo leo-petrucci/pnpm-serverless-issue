@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "baseUrl": "./src"
+  }
+}

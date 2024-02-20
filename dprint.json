@@ -1,0 +1,32 @@
+{
+  "typescript": {
+    "lineWidth": 120,
+    "indentWidth": 4,
+    "useTabs": false,
+    "semiColons": "prefer",
+    "quoteStyle": "alwaysDouble",
+    "quoteProps": "consistent",
+    "newLineKind": "lf",
+    "useBraces": "maintain",
+    "bracePosition": "maintain",
+    "singleBodyPosition": "maintain",
+    "nextControlFlowPosition": "maintain",
+    "trailingCommas": "onlyMultiLine",
+    "operatorPosition": "maintain"
+  },
+  "json": {
+    "lineWidth": 90
+  },
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json",
+    "**/.webpack",
+    "**/idea",
+    "**/.serverless",
+    "**/.terraform"
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.88.4.wasm",
+    "https://plugins.dprint.dev/json-0.19.0.wasm"
+  ]
+}
